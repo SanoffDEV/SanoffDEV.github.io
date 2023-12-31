@@ -73,6 +73,16 @@ body #side-bar {
 @media screen and (min-width: 746px) {
   body #side-bar {
     opacity: 0;
+    cursor: none;
+    width: 0;
+    height: 0;
+  }
+}
+@media screen and (max-width: 746px) {
+  body #side-bar {
+    cursor: pointer;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
   }
 }
 body #side-bar ul {
@@ -84,6 +94,9 @@ body #side-bar ul {
 @media screen and (min-width: 746px) {
   body #side-bar ul {
     opacity: 0;
+    cursor: none;
+    width: 0;
+    height: 0;
   }
 }
 body #side-bar li {
@@ -91,7 +104,6 @@ body #side-bar li {
   color: #292929;
   list-style: none;
   font-size: 1.5rem;
-  cursor: pointer;
 }
 body #side-bar li:hover {
   -webkit-transition: 0.3s;
@@ -104,7 +116,6 @@ body .toggle-btn {
   position: absolute;
   top: 30px;
   left: 780px;
-  cursor: pointer;
   height: 50px;
   width: 50px;
 }

@@ -79,8 +79,13 @@ body {
 
     @media screen and (min-width: 746px) {
       opacity: 0;
+      cursor: none;
+      width: 0;
+      height: 0;
     }
     @media screen and (max-width: 746px) {
+      cursor: pointer;
+      transition: 1s ease-in-out;
     }
 
     ul {
@@ -91,6 +96,9 @@ body {
 
       @media screen and (min-width: 746px) {
         opacity: 0;
+        cursor: none;
+        width: 0;
+        height: 0;
       }
     }
     li {
@@ -98,7 +106,6 @@ body {
       color: $color_1;
       list-style: none;
       font-size: 1.5rem;
-      cursor: pointer;
 
       &:hover {
         transition: 0.3s;
@@ -111,7 +118,7 @@ body {
     position: absolute;
     top: 30px;
     left: 780px;
-    cursor: pointer;
+
     height: 50px;
     width: 50px;
 
