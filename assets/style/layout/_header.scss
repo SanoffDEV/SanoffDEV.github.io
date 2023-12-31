@@ -1,0 +1,119 @@
+header {
+  color: $white1;
+  position: relative;
+  max-height: 100vh;
+  min-height: 100vh;
+
+  .headercontent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: headerAnim 1.5s forwards;
+
+    @keyframes headerAnim {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      @include title;
+      font-size: 4rem;
+      letter-spacing: 6px;
+
+      @media screen and (max-width: 746px) {
+        font-size: 2.5rem;
+      }
+    }
+    p {
+      font-family: $font1;
+      font-size: 1.25rem;
+      margin-top: 150px;
+      transform: translateY(40px);
+      animation: headerAnim 1.5s forwards;
+
+      @media screen and (max-width: 746px) {
+        display: none;
+      }
+    }
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.253);
+  color: $white1;
+  width: 40%;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+
+  @media screen and (max-width: 1400px) {
+    width: 50%;
+    left: 25%;
+  }
+  @media screen and (max-width: 914px) {
+    width: 55%;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 830px) {
+    width: 60%;
+  }
+
+  @media screen and (max-width: 770px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 746px) {
+    display: none;
+  }
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav {
+  &:hover li:not(:hover) {
+    background: none;
+    color: $white1;
+  }
+
+  li {
+    @include title;
+    font-size: 0.9rem;
+    padding: 0 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    @media screen and (max-width: 1140px) {
+      font-size: 0.8rem;
+    }
+    @media screen and (max-width: 1060px) {
+      font-size: 0.7rem;
+    }
+    @media screen and (max-width: 1000px) {
+      font-size: 0.6rem;
+    }
+
+    &:first-child {
+      background: $white1;
+      color: $black1;
+    }
+    &:hover {
+      background: $white1;
+      color: $black1;
+    }
+  }
+}
