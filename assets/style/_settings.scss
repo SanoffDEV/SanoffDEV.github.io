@@ -22,16 +22,24 @@ $white1: rgb(243, 243, 243);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 html {
   scroll-behavior: smooth;
 }
 
-li {
-  list-style: none;
+a {
+  color: $black1;
 }
 
-body {
+img {
+  height: 25px;
+  width: 25px;
+  transform: translateY(2px);
+}
+
+.home {
   background: url(../img/cables-microphones-fond-noir.jpg) bottom center/cover
     fixed;
 
@@ -44,7 +52,8 @@ body {
   max-width: 1300px;
   margin: 0 auto;
   overflow: hidden;
-
+}
+body {
   &:before {
     content: "";
     position: absolute;
@@ -126,7 +135,7 @@ body {
       width: 60px;
       height: 10px;
       border-radius: 5px;
-      background: #ffffff;
+      background: $white1;
       display: block;
       margin-top: 4px;
       transition: 0.3s ease;
