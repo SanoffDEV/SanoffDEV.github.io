@@ -139,7 +139,7 @@ header .headercontent h1 {
 @media screen and (max-width: 583px) {
   header .headercontent h1 {
     font-size: 2rem;
-    top: 500px;
+    top: 550px;
   }
 }
 header .headercontent p {
