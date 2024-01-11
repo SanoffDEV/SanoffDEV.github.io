@@ -22,13 +22,29 @@ header {
       }
     }
 
-    h1 {
+    h2 {
       @include title;
       font-size: 4rem;
       letter-spacing: 6px;
 
       @media screen and (max-width: 746px) {
         font-size: 2.5rem;
+      }
+    }
+    h1 {
+      @include title;
+      font-size: 1.5rem;
+      letter-spacing: 3px;
+      position: absolute;
+      top: 20px;
+
+      @media screen and (max-width: 746px) {
+        font-size: 2.5rem;
+      }
+      @media screen and (max-width: 583px) {
+        font-size: 2rem;
+
+        top: 900px;
       }
     }
     p {
@@ -86,6 +102,7 @@ nav {
   &:hover li:not(:hover) {
     background: none;
     color: $white1;
+    transition: 0.5s;
   }
 
   li {
@@ -110,10 +127,12 @@ nav {
     &:first-child {
       background: $white1;
       color: $black1;
+      transition: 2s ease;
     }
     &:hover {
       background: $white1;
       color: $black1;
+      transition: 0.9s ease-in-out;
     }
   }
 }
