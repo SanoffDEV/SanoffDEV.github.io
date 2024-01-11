@@ -29,17 +29,17 @@ html {
   scroll-behavior: smooth;
 }
 
-a {
-  color: $black1;
-}
-
-img {
-  height: 25px;
-  width: 25px;
-  transform: translateY(2px);
-}
-
 .home {
+  a {
+    color: $black1;
+  }
+
+  img {
+    height: 25px;
+    width: 25px;
+    transform: translateY(2px);
+  }
+
   background: url(../img/cables-microphones-fond-noir.jpg) bottom center/cover
     fixed;
 
@@ -52,23 +52,24 @@ img {
   max-width: 1300px;
   margin: 0 auto;
   overflow: hidden;
-}
-body {
-  &:before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background: $black1;
-    animation: animBefore 2.5s ease forwards;
-    animation-delay: 0.15s;
-  }
 
-  @keyframes animBefore {
-    to {
-      opacity: 0;
+  body {
+    &:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: $black1;
+      animation: animBefore 2.5s ease forwards;
+      animation-delay: 0.15s;
+    }
+
+    @keyframes animBefore {
+      to {
+        opacity: 0;
+      }
     }
   }
 }

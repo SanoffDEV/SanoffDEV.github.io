@@ -19,17 +19,6 @@ html {
   scroll-behavior: smooth;
 }
 
-a {
-  color: rgb(17, 17, 17);
-}
-
-img {
-  height: 25px;
-  width: 25px;
-  -webkit-transform: translateY(2px);
-          transform: translateY(2px);
-}
-
 .home {
   background: url(../img/cables-microphones-fond-noir.jpg) bottom center/cover fixed;
   text-align: center;
@@ -38,13 +27,21 @@ img {
   margin: 0 auto;
   overflow: hidden;
 }
+.home a {
+  color: rgb(17, 17, 17);
+}
+.home img {
+  height: 25px;
+  width: 25px;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
 @media screen and (max-width: 900px) {
   .home {
     background: url(../img/cables-microphones-fond-noir.jpg) top right/cover;
   }
 }
-
-body:before {
+.home body:before {
   content: "";
   position: absolute;
   height: 100%;
@@ -157,6 +154,107 @@ header .headercontent p {
   }
 }
 
+#side-bar {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.256);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+  top: 0;
+  left: -750px;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
+  z-index: 50;
+}
+@media screen and (min-width: 746px) {
+  #side-bar {
+    opacity: 0;
+    cursor: none;
+    width: 0;
+    height: 0;
+  }
+}
+@media screen and (max-width: 746px) {
+  #side-bar {
+    cursor: pointer;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
+  }
+}
+#side-bar ul {
+  display: block;
+  font-family: inter-bold, sans-serif;
+  text-transform: uppercase;
+  margin: 130px 5px;
+}
+@media screen and (min-width: 746px) {
+  #side-bar ul {
+    opacity: 0;
+    cursor: none;
+    width: 0;
+    height: 0;
+  }
+}
+#side-bar li {
+  padding: 40px 50px;
+  color: rgb(17, 17, 17);
+  list-style: none;
+  font-size: 1.5rem;
+}
+#side-bar li:hover {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  background: transparent;
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 30px;
+  left: 780px;
+  height: 50px;
+  width: 50px;
+}
+.toggle-btn span {
+  width: 60px;
+  height: 10px;
+  border-radius: 5px;
+  background: rgb(243, 243, 243);
+  display: block;
+  margin-top: 4px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+@media screen and (min-width: 747px) {
+  .toggle-btn {
+    opacity: 0;
+  }
+}
+
+#side-bar.active {
+  left: 0;
+}
+
+.active span {
+  position: absolute;
+}
+.active span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.active span:nth-child(2) {
+  opacity: 0;
+}
+.active span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.active ~ .content {
+  opacity: 0.3;
+}
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -261,105 +359,4 @@ nav li:hover {
   color: rgb(17, 17, 17);
   -webkit-transition: 0.9s ease-in-out;
   transition: 0.9s ease-in-out;
-}
-
-#side-bar {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.256);
-  -webkit-backdrop-filter: blur(12px);
-          backdrop-filter: blur(12px);
-  top: 0;
-  left: -750px;
-  -webkit-transition: 0.5s ease-out;
-  transition: 0.5s ease-out;
-  z-index: 50;
-}
-@media screen and (min-width: 746px) {
-  #side-bar {
-    opacity: 0;
-    cursor: none;
-    width: 0;
-    height: 0;
-  }
-}
-@media screen and (max-width: 746px) {
-  #side-bar {
-    cursor: pointer;
-    -webkit-transition: 1s ease-in-out;
-    transition: 1s ease-in-out;
-  }
-}
-#side-bar ul {
-  display: block;
-  font-family: inter-bold, sans-serif;
-  text-transform: uppercase;
-  margin: 130px 5px;
-}
-@media screen and (min-width: 746px) {
-  #side-bar ul {
-    opacity: 0;
-    cursor: none;
-    width: 0;
-    height: 0;
-  }
-}
-#side-bar li {
-  padding: 40px 50px;
-  color: rgb(17, 17, 17);
-  list-style: none;
-  font-size: 1.5rem;
-}
-#side-bar li:hover {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  -webkit-transform: scale(1.15);
-          transform: scale(1.15);
-  background: transparent;
-}
-
-.toggle-btn {
-  position: absolute;
-  top: 30px;
-  left: 780px;
-  height: 50px;
-  width: 50px;
-}
-.toggle-btn span {
-  width: 60px;
-  height: 10px;
-  border-radius: 5px;
-  background: rgb(243, 243, 243);
-  display: block;
-  margin-top: 4px;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-@media screen and (min-width: 747px) {
-  .toggle-btn {
-    opacity: 0;
-  }
-}
-
-#side-bar.active {
-  left: 0;
-}
-
-.active span {
-  position: absolute;
-}
-.active span:nth-child(1) {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-.active span:nth-child(2) {
-  opacity: 0;
-}
-.active span:nth-child(3) {
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-.active ~ .content {
-  opacity: 0.3;
 }/*# sourceMappingURL=index.css.map */
