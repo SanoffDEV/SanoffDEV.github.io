@@ -169,6 +169,23 @@ header .headercontent p {
   right: 0px;
   z-index: 5;
 }
+@media screen and (max-width: 801px) {
+  .infos {
+    display: none;
+  }
+}
+
+.infos2 {
+  position: absolute;
+  top: 35px;
+  right: 30px;
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .infos2 {
+    display: block;
+  }
+}
 
 .infoscontainer {
   position: absolute;
@@ -182,7 +199,7 @@ header .headercontent p {
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 801px) {
   .infoscontainer {
     display: none;
   }
