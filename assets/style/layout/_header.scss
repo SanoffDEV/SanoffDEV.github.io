@@ -77,6 +77,10 @@ header {
   clip-path: circle(50% at 50% 50%);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
+  @media screen and (max-width: 1024px) {
+    display: none;
+  }
+
   h4 {
     font-family: $font1;
     text-transform: uppercase;
