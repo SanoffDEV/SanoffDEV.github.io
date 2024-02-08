@@ -30,3 +30,4 @@ togglebtn.addEventListener("click", () => {
 headercontent.addEventListener("click", () => {
   sidebar.classList.remove("active");
 });
+

@@ -22,60 +22,38 @@ $white1: rgb(243, 243, 243);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-  font: inherit;
-  min-width: 0;
 }
 html {
   scroll-behavior: smooth;
 }
 
-.home {
-  a {
-    color: $black1;
-  }
+li {
+  list-style: none;
+}
 
-  img {
-    height: 25px;
-    width: 25px;
-    transform: translateY(2px);
-  }
-
+body {
   background: url(../img/cables-microphones-fond-noir.jpg) bottom center/cover
     fixed;
-
-  @media screen and (max-width: 900px) {
-    background: url(../img/cables-microphones-fond-noir.jpg) top right/cover;
-  }
-
   text-align: center;
   font-family: $font2;
   max-width: 1300px;
   margin: 0 auto;
-  overflow: hidden;
 
-  body {
-    min-height: 100dvh;
-    &:before {
-      content: "";
-      position: absolute;
-      height: 100%;
-      width: 100%;
-      top: 0;
-      left: 0;
-      background: $black1;
-      animation: animBefore 2.5s ease forwards;
-      animation-delay: 0.15s;
-    }
+  &:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: $black1;
+    animation: animBefore 2.5s ease forwards;
+    animation-delay: 0.15s;
+  }
 
-    @keyframes animBefore {
-      to {
-        opacity: 0;
-      }
+  @keyframes animBefore {
+    to {
+      opacity: 0;
     }
   }
-}
-p {
-  text-wrap: balance;
 }
