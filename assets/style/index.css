@@ -16,9 +16,11 @@
   font: inherit;
   min-width: 0;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 .home {
   background: url(../img/cables-microphones-fond-noir.jpg) bottom center/cover
     fixed;
@@ -68,9 +70,11 @@ html {
     opacity: 0;
   }
 }
+
 p {
   text-wrap: balance;
 }
+
 header {
   color: rgb(243, 243, 243);
   position: relative;
@@ -159,6 +163,7 @@ header .headercontent p {
     display: none;
   }
 }
+
 #side-bar {
   position: absolute;
   width: 100%;
@@ -215,6 +220,7 @@ header .headercontent p {
   transform: scale(1.15);
   background: transparent;
 }
+
 .toggle-btn {
   position: absolute;
   top: 30px;
@@ -237,9 +243,11 @@ header .headercontent p {
     opacity: 0;
   }
 }
+
 #side-bar.active {
   left: 0;
 }
+
 .active span {
   position: absolute;
 }
@@ -257,6 +265,7 @@ header .headercontent p {
 .active ~ .content {
   opacity: 0.3;
 }
+
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -307,6 +316,7 @@ nav {
     display: none;
   }
 }
+
 ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -318,6 +328,7 @@ ul {
   -ms-flex-pack: center;
   justify-content: center;
 }
+
 nav:hover li:not(:hover) {
   background: none;
   color: rgb(243, 243, 243);
@@ -372,6 +383,7 @@ nav li:hover {
   -webkit-transition: 0.9s ease-in-out;
   transition: 0.9s ease-in-out;
 }
+
 @-webkit-keyframes Navpop {
   to {
     -webkit-transform: translateY(0px);
@@ -379,6 +391,7 @@ nav li:hover {
     opacity: 1;
   }
 }
+
 @keyframes Navpop {
   to {
     -webkit-transform: translateY(0px);
@@ -557,6 +570,7 @@ nav li:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 .page3 {
   background: rgb(255, 255, 255);
   text-align: center;
@@ -728,6 +742,7 @@ nav li:hover {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
+
 .page2 {
   background: rgb(255, 255, 255);
   text-align: center;
@@ -898,5 +913,4 @@ nav li:hover {
   left: 0px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-/*# sourceMappingURL=index.css.map */
+} /*# sourceMappingURL=index.css.map */
