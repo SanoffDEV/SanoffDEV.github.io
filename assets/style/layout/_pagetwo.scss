@@ -1,0 +1,139 @@
+.page3 {
+  background: rgb(255, 255, 255);
+
+  nav {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    background: #343434;
+    color: $white1;
+    width: 40%;
+    height: 80px;
+    width: 650px;
+    position: absolute;
+    bottom: 0;
+    left: 33%;
+    animation: Navpop 2s forwards;
+    opacity: 0;
+    transform: translateY(200px);
+
+    @media screen and (max-width: 1400px) {
+      width: 50%;
+      left: 25%;
+    }
+    @media screen and (max-width: 914px) {
+      width: 55%;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 830px) {
+      width: 60%;
+    }
+
+    @media screen and (max-width: 770px) {
+      font-size: 1rem;
+    }
+    @media screen and (max-width: 746px) {
+      display: none;
+    }
+  }
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+  }
+  nav {
+    &:hover li:not(:hover) {
+      background: #eeeaeaea;
+      color: $black1;
+      transition: 0.5s;
+    }
+
+    li {
+      @include title;
+      font-size: 0.9rem;
+      padding: 0 15px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      &:first-child {
+        width: 140px;
+        justify-content: center;
+      }
+
+      @media screen and (max-width: 1140px) {
+        font-size: 0.8rem;
+      }
+      @media screen and (max-width: 1060px) {
+        font-size: 0.7rem;
+      }
+      @media screen and (max-width: 1000px) {
+        font-size: 0.6rem;
+      }
+      &:first-child {
+        background: #343434;
+      }
+      &:nth-child(4) {
+        background: #515050;
+        color: $black1;
+        transition: 2s ease;
+      }
+      &:hover {
+        background: #515050;
+        color: $black1;
+        transition: 0.9s ease-in-out;
+      }
+    }
+  }
+  a {
+    color: $white1;
+
+    &:hover {
+      color: $black1;
+    }
+  }
+
+  @keyframes Navpop {
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+
+  text-align: center;
+  font-family: $font2;
+  max-width: 1300px;
+  margin: 0 auto;
+  body {
+    min-height: 100dvh;
+    &:before {
+      content: "";
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: $black1;
+      animation: animBefore 2.5s ease forwards;
+      animation-delay: 0.15s;
+    }
+
+    @keyframes animBefore {
+      to {
+        opacity: 0;
+      }
+    }
+  }
+  .svgBack {
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: 0.5s;
+  }
+}

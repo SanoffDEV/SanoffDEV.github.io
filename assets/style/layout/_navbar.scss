@@ -1,76 +1,90 @@
 nav {
-    display: flex;
-    justify-content: space-between;
-    background: rgba(255, 255, 255, 0.253);
-    color: $white1;
-    width: 40%;
-    height: 80px;
-    position: absolute;
-    bottom: 0;
-    left: 30%;
-  
-    @media screen and (max-width: 1400px) {
-      width: 50%;
-      left: 25%;
-    }
-    @media screen and (max-width: 914px) {
-      width: 55%;
-      justify-content: center;
-    }
-  
-    @media screen and (max-width: 830px) {
-      width: 60%;
-    }
-  
-    @media screen and (max-width: 770px) {
-      font-size: 1rem;
-    }
-    @media screen and (max-width: 746px) {
-      display: none;
-    }
+  display: flex;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.253);
+  color: $white1;
+  width: 40%;
+  height: 80px;
+  width: 650px;
+  position: absolute;
+  bottom: 0;
+  left: 33%;
+  animation: Navpop 2s forwards;
+  opacity: 0;
+  transform: translateY(200px);
+
+  @media screen and (max-width: 1400px) {
+    width: 50%;
+    left: 25%;
   }
-  
-  ul {
-    display: flex;
-    align-items: center;
+  @media screen and (max-width: 914px) {
+    width: 55%;
     justify-content: center;
   }
-  nav {
-    &:hover li:not(:hover) {
-      background: none;
-      color: $white1;
-      transition: 0.5s;
+
+  @media screen and (max-width: 830px) {
+    width: 60%;
+  }
+
+  @media screen and (max-width: 770px) {
+    font-size: 1rem;
+  }
+  @media screen and (max-width: 746px) {
+    display: none;
+  }
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav {
+  &:hover li:not(:hover) {
+    background: none;
+    color: $white1;
+    transition: 0.5s;
+  }
+
+  li {
+    @include title;
+    font-size: 0.9rem;
+    padding: 0 15px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:first-child {
+      width: 140px;
+      justify-content: center;
     }
-  
-    li {
-      @include title;
-      font-size: 0.9rem;
-      padding: 0 15px;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      cursor: pointer;
-  
-      @media screen and (max-width: 1140px) {
-        font-size: 0.8rem;
-      }
-      @media screen and (max-width: 1060px) {
-        font-size: 0.7rem;
-      }
-      @media screen and (max-width: 1000px) {
-        font-size: 0.6rem;
-      }
-  
-      &:first-child {
-        background: $white1;
-        color: $black1;
-        transition: 2s ease;
-      }
-      &:hover {
-        background: $white1;
-        color: $black1;
-        transition: 0.9s ease-in-out;
-      }
+
+    @media screen and (max-width: 1140px) {
+      font-size: 0.8rem;
+    }
+    @media screen and (max-width: 1060px) {
+      font-size: 0.7rem;
+    }
+    @media screen and (max-width: 1000px) {
+      font-size: 0.6rem;
+    }
+
+    &:first-child {
+      background: $white1;
+      color: $black1;
+      transition: 2s ease;
+    }
+    &:hover {
+      background: $white1;
+      color: $black1;
+      transition: 0.9s ease-in-out;
     }
   }
-  
+}
+
+@keyframes Navpop {
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}

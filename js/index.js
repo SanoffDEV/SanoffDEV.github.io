@@ -1,7 +1,6 @@
 const sidebar = document.getElementById("side-bar");
 const headercontent = document.querySelector(".headercontent");
 const togglebtn = document.getElementById("btn");
-
 let initialBtnStyle = {
   left: btn.style.left,
   top: btn.style.top,
@@ -30,4 +29,3 @@ togglebtn.addEventListener("click", () => {
 headercontent.addEventListener("click", () => {
   sidebar.classList.remove("active");
 });
-
