@@ -60,3 +60,31 @@ header {
   }
 }
 
+.infos {
+  position: absolute;
+  top: 425px;
+  right: 0px;
+  z-index: 5;
+}
+
+.infoscontainer {
+  position: absolute;
+  top: 400px;
+  right: -130px;
+  width: 180px;
+  height: 80px;
+  background: $white1;
+  clip-path: circle(50% at 50% 50%);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  h4 {
+    font-family: $font1;
+    text-transform: uppercase;
+    transform: translateY(28px);
+  }
+
+  &:hover {
+    transform: translateX(-100px);
+    transition: 1s;
+  }
+}
