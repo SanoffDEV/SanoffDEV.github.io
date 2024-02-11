@@ -1,5 +1,5 @@
-.page3 {
-  background: rgb(255, 255, 255);
+.page2 {
+  scroll-behavior: smooth;
 
   #navbar {
     display: none;
@@ -38,6 +38,132 @@
   }
   a {
     color: black;
+  }
+  #navbar2 {
+    ul {
+      li {
+        @include title;
+      }
+    }
+  }
+  h2 {
+    font-family: $font1;
+    text-transform: uppercase;
+    margin: 300px 0px 100px 80px;
+    font-size: 2.9rem;
+    letter-spacing: 2.5px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 80px;
+      width: 650px;
+      height: 2px;
+      background-color: black;
+      transform: rotate(90deg) translateX(460px) translateY(420px);
+      @media screen and (max-width: 1100px) {
+        width: 1000px;
+        transform: rotate(90deg) translateX(650px) translateY(570px);
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 23px;
+      left: 0;
+      width: 900px;
+      height: 2px;
+      background: black;
+      transform: translateX(700px);
+      @media screen and (max-width: 1100px) {
+        width: 400px;
+        transform: translateX(500px) translateY(-3px);
+      }
+    }
+    @media screen and (max-width: 1100px) {
+      font-size: 2rem;
+    }
+  }
+  .headerPage1 {
+    margin-top: -220px;
+  }
+  .Material {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 65%;
+    margin: 40px auto;
+    font-family: $font1;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+      rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+
+    > * {
+      position: relative;
+      padding: 20px;
+      border: 1px solid black; // Ajout de la bordure ici
+      border-radius: 5px;
+      height: 350px;
+      text-align: center;
+      overflow: hidden;
+    }
+    li {
+      img {
+        text-align: center;
+        justify-content: center;
+        padding: auto;
+      }
+    }
+
+    li:first-child img {
+      transform: rotate(45deg) translateY(-50px) translateX(-50px);
+      width: 60%;
+    }
+    li:nth-child(2) img {
+      transform: translateY(-170px);
+    }
+
+    li:nth-child(3) img {
+      transform: translateY(-50px) rotate(45deg);
+    }
+
+    li:nth-child(4) img {
+      transform: translateY(-20px);
+    }
+    @media screen and (max-width: 1600px) {
+      li:nth-child(1) img {
+        width: 70%;
+        transform: translateY(-30px) translateX(30px) rotate(45deg);
+      }
+      li:nth-child(2) img {
+        width: 99%;
+        transform: translateY(-50px);
+      }
+      li:nth-child(3) img {
+        width: 70%;
+        transform: translateY(0px) rotate(45deg);
+      }
+      li:nth-child(4) img {
+        width: 70%;
+        transform: translateY(0px);
+      }
+      li:nth-child(5) img {
+        width: 85%;
+        transform: translateY(40px);
+      }
+      li:nth-child(6) img {
+        width: 80%;
+        transform: translateY(40px);
+      }
+    }
+    @media screen and (max-width: 1100px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 850px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
 .svgBack {
