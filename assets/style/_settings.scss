@@ -31,6 +31,204 @@ html {
   scroll-behavior: smooth;
 }
 
+.page1 .headerPage1 .Material li:first-child {
+  background: url(../img/jackmono_.png) no-repeat center;
+  background-position-x: 45px;
+  @media screen and (max-width: 1100px) {
+    background-position-x: 30px;
+  }
+  @media screen and (max-width: 1500px) {
+    background-position-x: 30px;
+  }
+  @media screen and (max-width: 1000px) {
+    background-position: center;
+  }
+}
+
+.page1 .headerPage1 .Material li:nth-child(2) {
+  background: url(../img/cableJackMono.png) no-repeat center;
+  @media screen and (max-width: 1100px) {
+    background-position-x: -25px;
+  }
+  @media screen and (max-width: 1000px) {
+    background-position: center;
+  }
+}
+.page1 .headerPage1 .Material li:nth-child(3) {
+  background: url(../img/ferasouder.png) no-repeat center;
+  @media screen and (max-width: 1100px) {
+    background-position-x: 30px;
+  }
+  @media screen and (max-width: 1000px) {
+    background-position: center;
+  }
+}
+.page1 .headerPage1 .Material li:nth-child(4) {
+  background: url(../img/pinceadenuder.png) no-repeat center;
+  @media screen and (max-width: 1500px) {
+    background-position-y: 40px;
+  }
+  @media screen and (max-width: 1100px) {
+    background-position-x: 30px;
+  }
+  @media screen and (max-width: 1000px) {
+    background-position: center;
+  }
+}
+.page1 .headerPage1 .Material li:nth-child(5) {
+  background: url(../img/filasouder.png) no-repeat center;
+  @media screen and (max-width: 1100px) {
+    background-position-x: 10px;
+  }
+  @media screen and (max-width: 1000px) {
+    background-position: center;
+  }
+}
+.page1 .headerPage1 .Material li:nth-child(6) {
+  background: url(../img/3ememain.png) no-repeat center;
+  background-position-y: 40px;
+  @media screen and (max-width: 1100px) {
+    background-position-x: 15px;
+  }
+  @media screen and (max-width: 1000px) {
+    background-position: center;
+    background-position-y: 45px;
+  }
+}
+.page2 .headerPage1 .Material li:first-child {
+  background: url(../img/ficheRCA.png) no-repeat;
+  background-position-x: 110px;
+  background-size: contain;
+  background-position: center;
+  @media screen and (max-width: 1100px) {
+    background-position-x: 30px;
+    background-position: center;
+  }
+  @media screen and (max-width: 1500px) {
+    background-position-x: 30px;
+    background-position: center;
+  }
+  @media screen and (max-width: 1000px) {
+    background-position: center;
+  }
+}
+
+.page2 .headerPage1 .Material li:nth-child(2) {
+  background: url(../img/cableJackMono.png) no-repeat center;
+  @media screen and (max-width: 1100px) {
+    background-position-x: -25px;
+  }
+  @media screen and (max-width: 1000px) {
+    background-position: center;
+  }
+}
+.page2 .headerPage1 .Material li:nth-child(3) {
+  background: url(../img/ferasouder.png) no-repeat center;
+  @media screen and (max-width: 1100px) {
+    background-position-x: 30px;
+  }
+  @media screen and (max-width: 1000px) {
+    background-position: center;
+  }
+}
+.page2 .headerPage1 .Material li:nth-child(4) {
+  background: url(../img/pinceadenuder.png) no-repeat center;
+  @media screen and (max-width: 1500px) {
+    background-position-y: 40px;
+  }
+  @media screen and (max-width: 1100px) {
+    background-position-x: 30px;
+  }
+  @media screen and (max-width: 1000px) {
+    background-position: center;
+    background-position-y: 40px;
+  }
+}
+.page2 .headerPage1 .Material li:nth-child(5) {
+  background: url(../img/filasouder.png) no-repeat center;
+  @media screen and (max-width: 1100px) {
+    background-position-x: 10px;
+  }
+  @media screen and (max-width: 1000px) {
+    background-position: center;
+  }
+}
+.page2 .headerPage1 .Material li:nth-child(6) {
+  background: url(../img/3ememain.png) no-repeat center;
+  background-position-y: 40px;
+  @media screen and (max-width: 1100px) {
+    background-position-x: 15px;
+  }
+  @media screen and (max-width: 1000px) {
+    background-position: center;
+    background-position-y: 45px;
+  }
+}
+.page3 .headerPage1 .Material li:first-child {
+  background: url(../img/jackstereo.png) no-repeat center;
+  background-position-x: 60px;
+  background-position-y: 50px;
+  @media screen and (max-width: 1100px) {
+    background-position-x: 30px;
+  }
+  @media screen and (max-width: 1500px) {
+    background-position-x: 30px;
+  }
+  @media screen and (max-width: 1000px) {
+    background-position: center;
+  }
+}
+
+.page3 .headerPage1 .Material li:nth-child(2) {
+  background: url(../img/cableJackMono.png) no-repeat center;
+  @media screen and (max-width: 1100px) {
+    background-position-x: -25px;
+  }
+  @media screen and (max-width: 1000px) {
+    background-position: center;
+  }
+}
+.page3 .headerPage1 .Material li:nth-child(3) {
+  background: url(../img/ferasouder.png) no-repeat center;
+  @media screen and (max-width: 1100px) {
+    background-position-x: 30px;
+  }
+  @media screen and (max-width: 1000px) {
+    background-position: center;
+  }
+}
+.page3 .headerPage1 .Material li:nth-child(4) {
+  background: url(../img/pinceadenuder.png) no-repeat center;
+  @media screen and (max-width: 1500px) {
+    background-position-y: 40px;
+  }
+  @media screen and (max-width: 1100px) {
+    background-position-x: 30px;
+  }
+  @media screen and (max-width: 1000px) {
+    background-position: center;
+  }
+}
+.page3 .headerPage1 .Material li:nth-child(5) {
+  background: url(../img/filasouder.png) no-repeat center;
+  @media screen and (max-width: 1100px) {
+    background-position-x: 10px;
+  }
+  @media screen and (max-width: 1000px) {
+    background-position: center;
+  }
+}
+.page3 .headerPage1 .Material li:nth-child(6) {
+  background: url(../img/3ememain.png) no-repeat center;
+  background-position-y: 40px;
+  @media screen and (max-width: 1100px) {
+    background-position-x: 15px;
+  }
+  @media screen and (max-width: 1000px) {
+    background-position: center;
+    background-position-y: 45px;
+  }
+}
 .home {
   a {
     color: $black1;
@@ -79,4 +277,3 @@ html {
 p {
   text-wrap: balance;
 }
-
