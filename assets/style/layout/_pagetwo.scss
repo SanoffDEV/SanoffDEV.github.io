@@ -46,6 +46,9 @@
     font-size: 2.9rem;
     letter-spacing: 2.5px;
     position: relative;
+    @media screen and (max-width: 500px) {
+      left: -30px;
+    }
     &::after {
       content: "";
       position: absolute;
@@ -98,11 +101,22 @@
     > * {
       position: relative;
       padding: 20px;
-      border: 4px solid black; // Ajout de la bordure ici
+      border: 4px solid black;
       border-radius: 7px;
       height: 350px;
       text-align: center;
       overflow: hidden;
+      @media screen and (max-width: 1000px) {
+        width: 100%;
+        margin: auto;
+      }
+    }
+
+    @media screen and (max-width: 1400px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width: 1000px) {
+      grid-template-columns: repeat(1, 1fr);
     }
   }
 

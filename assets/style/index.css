@@ -40,6 +40,13 @@ html {
     background-position: center;
   }
 }
+@media screen and (max-width: 500px) {
+  .page1 .headerPage1 .Material li:first-child {
+    background: url(../img/jackmono_vtel.png) no-repeat center;
+    background-position: center;
+    background-position-x: 20px;
+  }
+}
 
 .page1 .headerPage1 .Material li:nth-child(2) {
   background: url(../img/cableJackMono.png) no-repeat center;
@@ -54,6 +61,13 @@ html {
     background-position: center;
   }
 }
+@media screen and (max-width: 500px) {
+  .page1 .headerPage1 .Material li:nth-child(2) {
+    background: url(../img/cableJackMonovtel.png) no-repeat center;
+    background-position: center;
+    background-position-x: -40px;
+  }
+}
 
 .page1 .headerPage1 .Material li:nth-child(3) {
   background: url(../img/ferasouder.png) no-repeat center;
@@ -66,6 +80,14 @@ html {
 @media screen and (max-width: 1000px) {
   .page1 .headerPage1 .Material li:nth-child(3) {
     background-position: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .page1 .headerPage1 .Material li:nth-child(3) {
+    background: url(../img/ferasoudervtel.png) no-repeat center;
+    background-position: center;
+    background-position-x: 20px;
+    background-position-y: 40px;
   }
 }
 
@@ -87,6 +109,14 @@ html {
     background-position: center;
   }
 }
+@media screen and (max-width: 500px) {
+  .page1 .headerPage1 .Material li:nth-child(4) {
+    background: url(../img/pinceadenudervtel.png) no-repeat center;
+    background-position: center;
+    background-position-x: 40px;
+    background-position-y: 60px;
+  }
+}
 
 .page1 .headerPage1 .Material li:nth-child(5) {
   background: url(../img/filasouder.png) no-repeat center;
@@ -99,6 +129,14 @@ html {
 @media screen and (max-width: 1000px) {
   .page1 .headerPage1 .Material li:nth-child(5) {
     background-position: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .page1 .headerPage1 .Material li:nth-child(5) {
+    background: url(../img/filasoudervtel.png) no-repeat center;
+    background-position: center;
+    background-position-x: 10px;
+    background-position-y: 80px;
   }
 }
 
@@ -115,6 +153,14 @@ html {
   .page1 .headerPage1 .Material li:nth-child(6) {
     background-position: center;
     background-position-y: 45px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .page1 .headerPage1 .Material li:nth-child(6) {
+    background: url(../img/3ememainvtel.png) no-repeat center;
+    background-position: center;
+    background-position-x: 20px;
+    background-position-y: 80px;
   }
 }
 
@@ -155,6 +201,13 @@ html {
     background-position: center;
   }
 }
+@media screen and (max-width: 500px) {
+  .page2 .headerPage1 .Material li:nth-child(2) {
+    background: url(../img/cableJackMonovtel.png) no-repeat center;
+    background-position: center;
+    background-position-x: -40px;
+  }
+}
 
 .page2 .headerPage1 .Material li:nth-child(3) {
   background: url(../img/ferasouder.png) no-repeat center;
@@ -167,6 +220,14 @@ html {
 @media screen and (max-width: 1000px) {
   .page2 .headerPage1 .Material li:nth-child(3) {
     background-position: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .page2 .headerPage1 .Material li:nth-child(3) {
+    background: url(../img/ferasoudervtel.png) no-repeat center;
+    background-position: center;
+    background-position-x: 20px;
+    background-position-y: 40px;
   }
 }
 
@@ -189,6 +250,14 @@ html {
     background-position-y: 40px;
   }
 }
+@media screen and (max-width: 500px) {
+  .page2 .headerPage1 .Material li:nth-child(4) {
+    background: url(../img/pinceadenudervtel.png) no-repeat center;
+    background-position: center;
+    background-position-x: 40px;
+    background-position-y: 60px;
+  }
+}
 
 .page2 .headerPage1 .Material li:nth-child(5) {
   background: url(../img/filasouder.png) no-repeat center;
@@ -201,6 +270,14 @@ html {
 @media screen and (max-width: 1000px) {
   .page2 .headerPage1 .Material li:nth-child(5) {
     background-position: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .page2 .headerPage1 .Material li:nth-child(5) {
+    background: url(../img/filasoudervtel.png) no-repeat center;
+    background-position: center;
+    background-position-x: 10px;
+    background-position-y: 80px;
   }
 }
 
@@ -217,6 +294,14 @@ html {
   .page2 .headerPage1 .Material li:nth-child(6) {
     background-position: center;
     background-position-y: 45px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .page2 .headerPage1 .Material li:nth-child(6) {
+    background: url(../img/3ememainvtel.png) no-repeat center;
+    background-position: center;
+    background-position-x: 20px;
+    background-position-y: 80px;
   }
 }
 
@@ -240,6 +325,12 @@ html {
     background-position: center;
   }
 }
+@media screen and (max-width: 500px) {
+  .page3 .headerPage1 .Material li:first-child {
+    background-position: center;
+    background-position-y: 80px;
+  }
+}
 
 .page3 .headerPage1 .Material li:nth-child(2) {
   background: url(../img/cableJackMono.png) no-repeat center;
@@ -254,6 +345,13 @@ html {
     background-position: center;
   }
 }
+@media screen and (max-width: 500px) {
+  .page3 .headerPage1 .Material li:nth-child(2) {
+    background: url(../img/cableJackMonovtel.png) no-repeat center;
+    background-position: center;
+    background-position-x: -40px;
+  }
+}
 
 .page3 .headerPage1 .Material li:nth-child(3) {
   background: url(../img/ferasouder.png) no-repeat center;
@@ -266,6 +364,14 @@ html {
 @media screen and (max-width: 1000px) {
   .page3 .headerPage1 .Material li:nth-child(3) {
     background-position: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .page3 .headerPage1 .Material li:nth-child(3) {
+    background: url(../img/ferasoudervtel.png) no-repeat center;
+    background-position: center;
+    background-position-x: 20px;
+    background-position-y: 40px;
   }
 }
 
@@ -287,6 +393,14 @@ html {
     background-position: center;
   }
 }
+@media screen and (max-width: 500px) {
+  .page3 .headerPage1 .Material li:nth-child(4) {
+    background: url(../img/pinceadenudervtel.png) no-repeat center;
+    background-position: center;
+    background-position-x: 40px;
+    background-position-y: 60px;
+  }
+}
 
 .page3 .headerPage1 .Material li:nth-child(5) {
   background: url(../img/filasouder.png) no-repeat center;
@@ -299,6 +413,14 @@ html {
 @media screen and (max-width: 1000px) {
   .page3 .headerPage1 .Material li:nth-child(5) {
     background-position: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  .page3 .headerPage1 .Material li:nth-child(5) {
+    background: url(../img/filasoudervtel.png) no-repeat center;
+    background-position: center;
+    background-position-x: 10px;
+    background-position-y: 80px;
   }
 }
 
@@ -315,6 +437,14 @@ html {
   .page3 .headerPage1 .Material li:nth-child(6) {
     background-position: center;
     background-position-y: 45px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .page3 .headerPage1 .Material li:nth-child(6) {
+    background: url(../img/3ememainvtel.png) no-repeat center;
+    background-position: center;
+    background-position-x: 20px;
+    background-position-y: 80px;
   }
 }
 
@@ -796,6 +926,11 @@ nav li:hover {
   letter-spacing: 2.5px;
   position: relative;
 }
+@media screen and (max-width: 500px) {
+  .page1 h2 {
+    left: -30px;
+  }
+}
 .page1 h2::after {
   content: "";
   position: absolute;
@@ -945,6 +1080,11 @@ nav li:hover {
   letter-spacing: 2.5px;
   position: relative;
 }
+@media screen and (max-width: 500px) {
+  .page2 h2 {
+    left: -30px;
+  }
+}
 .page2 h2::after {
   content: "";
   position: absolute;
@@ -1013,6 +1153,22 @@ nav li:hover {
   height: 350px;
   text-align: center;
   overflow: hidden;
+}
+@media screen and (max-width: 1000px) {
+  .page2 .Material > * {
+    width: 100%;
+    margin: auto;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .page2 .Material {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .page2 .Material {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 .page2 .svgBack {
   cursor: pointer;
