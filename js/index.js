@@ -21,7 +21,7 @@ infosbtn.addEventListener("mouseover", () => {
   infosbtn.style.transition = "opacity 1s, transform 1s";
   infosbtn.style.display = "none";
   infoscontainer.style.transition = "transform 1s"; // Augmentation de la durée à 2 secondes
-  infoscontainer.style.transform = "translateX(-85px)";
+  infoscontainer.style.transform = "translateX(-205px)";
 });
 
 infosbtn.addEventListener("mouseout", () => {

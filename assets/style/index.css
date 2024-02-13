@@ -596,7 +596,7 @@ header .headercontent p {
   right: 0px;
   z-index: 5;
 }
-@media screen and (max-width: 801px) {
+@media screen and (max-width: 1080px) {
   .infos {
     display: none;
   }
@@ -608,7 +608,7 @@ header .headercontent p {
   right: 30px;
   display: none;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1080px) {
   .infos2 {
     display: block;
   }
@@ -626,7 +626,7 @@ header .headercontent p {
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-@media screen and (max-width: 801px) {
+@media screen and (max-width: 1080px) {
   .infoscontainer {
     display: none;
   }
@@ -1227,6 +1227,11 @@ nav li:hover {
   font-size: 2.9rem;
   letter-spacing: 2.5px;
   position: relative;
+}
+@media screen and (max-width: 500px) {
+  .page3 h2 {
+    left: -30px;
+  }
 }
 .page3 h2::after {
   content: "";

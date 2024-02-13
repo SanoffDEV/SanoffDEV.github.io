@@ -65,7 +65,7 @@ header {
   top: 425px;
   right: 0px;
   z-index: 5;
-  @media screen and (max-width: 801px) {
+  @media screen and (max-width: 1080px) {
     display: none;
   }
 }
@@ -74,7 +74,7 @@ header {
   top: 35px;
   right: 30px;
   display: none;
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1080px) {
     display: block;
   }
 }
@@ -89,7 +89,7 @@ header {
   clip-path: circle(50% at 50% 50%);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
-  @media screen and (max-width: 801px) {
+  @media screen and (max-width: 1080px) {
     display: none;
   }
 
