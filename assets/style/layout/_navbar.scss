@@ -9,7 +9,8 @@ nav {
   position: absolute;
   bottom: 0;
   left: 33%;
-  animation: Navpop 2s forwards;
+  animation: Navpop 1.5s forwards;
+  animation-delay: 0.8s;
   opacity: 0;
   transform: translateY(200px);
 

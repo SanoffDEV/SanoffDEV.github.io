@@ -13,20 +13,20 @@ infoscontainer.addEventListener("mouseout", () => {
     infosbtn.style.display = "block";
   }, 2500);
 
-  infoscontainer.style.transition = "transform 2s"; // Même durée de transition pour la réapparition
+  infoscontainer.style.transition = "transform 2s"; 
   infoscontainer.style.transform = "translateX(0)";
 });
 
 infosbtn.addEventListener("mouseover", () => {
   infosbtn.style.transition = "opacity 1s, transform 1s";
   infosbtn.style.display = "none";
-  infoscontainer.style.transition = "transform 1s"; // Augmentation de la durée à 2 secondes
+  infoscontainer.style.transition = "transform 1s"; 
   infoscontainer.style.transform = "translateX(-205px)";
 });
 
 infosbtn.addEventListener("mouseout", () => {
   infosbtn.style.display = "block";
-  infoscontainer.style.transition = "transform 1s"; // Même durée de transition pour la réapparition
+  infoscontainer.style.transition = "transform 1s"; 
   infoscontainer.style.transform = "translateX(0)";
 });
 
