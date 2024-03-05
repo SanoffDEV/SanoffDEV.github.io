@@ -6,7 +6,6 @@
   backdrop-filter: blur(12px);
   top: 0;
   left: -750px;
-  transition: 0.5s ease-out;
   z-index: 50;
 
   @media screen and (min-width: 746px) {
@@ -39,19 +38,12 @@
     color: $black1;
     list-style: none;
     font-size: 1.5rem;
-
-    &:hover {
-      transition: 0.3s;
-      transform: scale(1.15);
-      background: transparent;
-    }
   }
 }
 .toggle-btn {
   position: absolute;
   top: 30px;
   left: 780px;
-
   height: 50px;
   width: 50px;
 
@@ -67,6 +59,11 @@
 
   @media screen and (min-width: 747px) {
     opacity: 0;
+  }
+}
+@keyframes ToggleAnim {
+  to {
+    transform: translateY(0);
   }
 }
 
