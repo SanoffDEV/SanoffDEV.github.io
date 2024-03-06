@@ -1179,7 +1179,12 @@ nav li:hover {
   margin: 150px 0px 100px 80px;
   font-size: 2.9rem;
   letter-spacing: 2.5px;
-  position: relative;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
 }
 .tutoriel2 h2::before {
   display: none;
@@ -1187,6 +1192,12 @@ nav li:hover {
 @media screen and (max-width: 500px) {
   .tutoriel2 h2 {
     left: -30px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .tutoriel2 h2 {
+    -webkit-transform: translateX(-18px);
+            transform: translateX(-18px);
   }
 }
 .tutoriel2 .tuto2 {
@@ -1219,7 +1230,9 @@ nav li:hover {
 }
 @media screen and (max-width: 1000px) {
   .tutoriel2 .tuto2 ul {
-    height: 400px;
+    line-height: 30px;
+    width: 95%;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -1230,32 +1243,56 @@ nav li:hover {
             align-items: center;
   }
 }
-
-.ytresponsive {
+.tutoriel2 .ytresponsive {
   width: 60%;
   margin-right: 30px;
 }
 @media screen and (max-width: 1400px) {
-  .ytresponsive {
+  .tutoriel2 .ytresponsive {
     -webkit-transform: translateY(150px);
             transform: translateY(150px);
   }
 }
 @media screen and (max-width: 1300px) {
-  .ytresponsive {
+  .tutoriel2 .ytresponsive {
     -webkit-transform: translateY(20px);
             transform: translateY(20px);
   }
 }
 @media screen and (max-width: 1000px) {
-  .ytresponsive {
+  .tutoriel2 .ytresponsive {
     margin: 80px auto;
+    width: 95%;
   }
 }
-.ytresponsive iframe {
+.tutoriel2 .ytresponsive iframe {
   aspect-ratio: 16/9;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.footer {
+  margin-top: 250px;
+  text-align: center;
+}
+.footer h4 {
+  font-family: inter-bold, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 50px auto;
+  position: relative;
+}
+.footer h4:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  color: peru;
+}
+@media screen and (max-width: 1000px) {
+  .footer {
+    margin-top: 50px;
+  }
 }
 
 .page3 .headerPage1 .Material li:first-child {
