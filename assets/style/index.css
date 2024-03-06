@@ -784,7 +784,12 @@ nav li:hover {
   margin: 150px 0px 100px 80px;
   font-size: 2.9rem;
   letter-spacing: 2.5px;
-  position: relative;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
 }
 .tutoriel h2::before {
   display: none;
@@ -792,6 +797,12 @@ nav li:hover {
 @media screen and (max-width: 500px) {
   .tutoriel h2 {
     left: -30px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .tutoriel h2 {
+    -webkit-transform: translateX(-18px);
+            transform: translateX(-18px);
   }
 }
 .tutoriel .tuto {
@@ -825,6 +836,8 @@ nav li:hover {
 @media screen and (max-width: 1000px) {
   .tutoriel .tuto ul {
     line-height: 30px;
+    width: 95%;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -854,6 +867,7 @@ nav li:hover {
 @media screen and (max-width: 1000px) {
   .tutoriel .ytresponsive {
     margin: 80px auto;
+    width: 95%;
   }
 }
 .tutoriel .ytresponsive iframe {
@@ -879,6 +893,11 @@ nav li:hover {
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   color: peru;
+}
+@media screen and (max-width: 1000px) {
+  .footer {
+    margin-top: 50px;
+  }
 }
 
 .page2 .headerPage1 .Material li:first-child {
