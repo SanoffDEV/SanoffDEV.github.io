@@ -693,6 +693,16 @@ nav li:hover {
     left: -30px;
   }
 }
+@media screen and (max-width: 1000px) {
+  .page1 h2 {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
+  }
+}
 .page1 h2::before {
   content: "";
   position: absolute;
@@ -710,19 +720,6 @@ nav li:hover {
   }
 }
 @media screen and (max-width: 1100px) {
-  .page1 h2::before {
-    width: 200px;
-    left: 50px;
-  }
-}
-@media screen and (max-width: 750px) {
-  .page1 h2::before {
-    -webkit-transform: translateX(300px) translateY(30px);
-            transform: translateX(300px) translateY(30px);
-    width: 200px;
-  }
-}
-@media screen and (max-width: 650px) {
   .page1 h2::before {
     display: none;
   }
@@ -802,6 +799,11 @@ nav li:hover {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 1000px) {
+  .tutoriel .tuto {
+    display: block;
+  }
+}
 .tutoriel .tuto ul {
   margin: -30px 120px;
   font-size: 1.4rem;
@@ -809,10 +811,74 @@ nav li:hover {
   font-family: inter-bold, sans-serif;
   line-height: 60px;
 }
-.tutoriel iframe {
-  margin-top: -20px;
+@media screen and (max-width: 1628px) {
+  .tutoriel .tuto ul {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .tutoriel .tuto ul {
+    font-size: 1rem;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .tutoriel .tuto ul {
+    line-height: 30px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .tutoriel .tuto ul li {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.tutoriel .ytresponsive {
+  width: 60%;
+  margin-right: 30px;
+}
+@media screen and (max-width: 1400px) {
+  .tutoriel .ytresponsive {
+    -webkit-transform: translateY(150px);
+            transform: translateY(150px);
+  }
+}
+@media screen and (max-width: 1300px) {
+  .tutoriel .ytresponsive {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .tutoriel .ytresponsive {
+    margin: 80px auto;
+  }
+}
+.tutoriel .ytresponsive iframe {
+  aspect-ratio: 16/9;
   -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.footer {
+  margin-top: 250px;
+  text-align: center;
+}
+.footer h4 {
+  font-family: inter-bold, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 50px auto;
+  position: relative;
+}
+.footer h4:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  color: peru;
 }
 
 .page2 .headerPage1 .Material li:first-child {
@@ -1011,20 +1077,14 @@ nav li:hover {
     left: -30px;
   }
 }
-.page2 h2::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 80px;
-  width: 650px;
-  height: 2px;
-  background-color: black;
-  -webkit-transform: rotate(90deg) translateX(460px) translateY(420px);
-          transform: rotate(90deg) translateX(460px) translateY(420px);
-}
-@media screen and (max-width: 1100px) {
-  .page2 h2::after {
-    display: none;
+@media screen and (max-width: 1000px) {
+  .page2 h2 {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transform: translateX(-30px);
+            transform: translateX(-30px);
   }
 }
 .page2 h2::before {
@@ -1044,19 +1104,6 @@ nav li:hover {
   }
 }
 @media screen and (max-width: 1100px) {
-  .page2 h2::before {
-    width: 200px;
-    left: 50px;
-  }
-}
-@media screen and (max-width: 750px) {
-  .page2 h2::before {
-    -webkit-transform: translateX(300px) translateY(30px);
-            transform: translateX(300px) translateY(30px);
-    width: 200px;
-  }
-}
-@media screen and (max-width: 650px) {
   .page2 h2::before {
     display: none;
   }
@@ -1105,6 +1152,91 @@ nav li:hover {
   left: 0px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.tutoriel2 h2 {
+  font-family: inter-bold, sans-serif;
+  text-transform: uppercase;
+  margin: 150px 0px 100px 80px;
+  font-size: 2.9rem;
+  letter-spacing: 2.5px;
+  position: relative;
+}
+.tutoriel2 h2::before {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .tutoriel2 h2 {
+    left: -30px;
+  }
+}
+.tutoriel2 .tuto2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 1000px) {
+  .tutoriel2 .tuto2 {
+    display: block;
+  }
+}
+.tutoriel2 .tuto2 ul {
+  margin: -30px 120px;
+  font-size: 1.4rem;
+  display: block;
+  font-family: inter-bold, sans-serif;
+  line-height: 60px;
+}
+@media screen and (max-width: 1628px) {
+  .tutoriel2 .tuto2 ul {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .tutoriel2 .tuto2 ul {
+    font-size: 1rem;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .tutoriel2 .tuto2 ul {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .tutoriel2 .tuto2 ul li {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.ytresponsive {
+  width: 60%;
+  margin-right: 30px;
+}
+@media screen and (max-width: 1400px) {
+  .ytresponsive {
+    -webkit-transform: translateY(150px);
+            transform: translateY(150px);
+  }
+}
+@media screen and (max-width: 1300px) {
+  .ytresponsive {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .ytresponsive {
+    margin: 80px auto;
+  }
+}
+.ytresponsive iframe {
+  aspect-ratio: 16/9;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .page3 .headerPage1 .Material li:first-child {

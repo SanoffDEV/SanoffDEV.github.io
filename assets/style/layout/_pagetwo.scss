@@ -145,22 +145,16 @@
     font-size: 2.9rem;
     letter-spacing: 2.5px;
     position: relative;
+
     @media screen and (max-width: 500px) {
       left: -30px;
     }
-    &::after {
-      content: "";
-      position: absolute;
-      top: 100%;
-      left: 80px;
-      width: 650px;
-      height: 2px;
-      background-color: black;
-      transform: rotate(90deg) translateX(460px) translateY(420px);
-      @media screen and (max-width: 1100px) {
-        display: none;
-      }
+    @media screen and (max-width: 1000px) {
+      text-align: center;
+      align-items: center;
+      transform: translateX(-30px);
     }
+
     &::before {
       content: "";
       position: absolute;
@@ -174,14 +168,6 @@
         width: 300px;
       }
       @media screen and (max-width: 1100px) {
-        width: 200px;
-        left: 50px;
-      }
-      @media screen and (max-width: 750px) {
-        transform: translateX(300px) translateY(30px);
-        width: 200px;
-      }
-      @media screen and (max-width: 650px) {
         display: none;
       }
     }
@@ -227,5 +213,71 @@
     top: 0px;
     left: 0px;
     transition: 0.5s;
+  }
+}
+.tutoriel2 {
+  h2 {
+    font-family: $font1;
+    text-transform: uppercase;
+    margin: 150px 0px 100px 80px;
+    font-size: 2.9rem;
+    letter-spacing: 2.5px;
+    position: relative;
+
+    &::before {
+      display: none;
+    }
+
+    @media screen and (max-width: 500px) {
+      left: -30px;
+    }
+  }
+  .tuto2 {
+    display: flex;
+    @media screen and (max-width: 1000px) {
+      display: block;
+    }
+    ul {
+      margin: -30px 120px;
+      font-size: 1.4rem;
+      display: block;
+      font-family: $font1;
+      line-height: 60px;
+
+      @media screen and (max-width: 1628px) {
+        font-size: 1.2rem;
+      }
+      @media screen and (max-width: 1300px) {
+        font-size: 1rem;
+        line-height: 40px;
+      }
+      @media screen and (max-width: 1000px) {
+        height: 400px;
+      }
+
+      li {
+        @media screen and (max-width: 1000px) {
+          text-align: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+.ytresponsive {
+  width: 60%;
+  margin-right: 30px;
+  @media screen and (max-width: 1400px) {
+    transform: translateY(150px);
+  }
+  @media screen and (max-width: 1300px) {
+    transform: translateY(20px);
+  }
+  @media screen and (max-width: 1000px) {
+    margin: 80px auto;
+  }
+  iframe {
+    aspect-ratio: 16/9;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 }
