@@ -228,3 +228,98 @@
     transition: 0.5s;
   }
 }
+.tutoriel3 {
+  h2 {
+    font-family: $font1;
+    text-transform: uppercase;
+    margin: 150px 0px 100px 80px;
+    font-size: 2.9rem;
+    letter-spacing: 2.5px;
+    text-align: center;
+    align-items: center;
+    transform: translateX(-50px);
+
+    &::before {
+      display: none;
+    }
+    &::after {
+      display: none;
+    }
+
+    @media screen and (max-width: 500px) {
+      left: -30px;
+    }
+    @media screen and (max-width: 1000px) {
+      transform: translateX(-18px);
+    }
+  }
+  .tuto3 {
+    display: flex;
+    @media screen and (max-width: 1000px) {
+      display: block;
+    }
+    ul {
+      margin: -30px 120px;
+      font-size: 1.4rem;
+      display: block;
+      font-family: $font1;
+      line-height: 60px;
+
+      @media screen and (max-width: 1628px) {
+        font-size: 1.2rem;
+      }
+      @media screen and (max-width: 1300px) {
+        font-size: 1rem;
+        line-height: 40px;
+      }
+      @media screen and (max-width: 1000px) {
+        line-height: 30px;
+        width: 95%;
+        margin: 0 auto;
+      }
+
+      li {
+        @media screen and (max-width: 1000px) {
+          text-align: center;
+          align-items: center;
+        }
+      }
+    }
+  }
+  .ytresponsive {
+    width: 60%;
+    margin-right: 30px;
+    @media screen and (max-width: 1400px) {
+      transform: translateY(150px);
+    }
+    @media screen and (max-width: 1300px) {
+      transform: translateY(20px);
+    }
+    @media screen and (max-width: 1000px) {
+      margin: 80px auto;
+      width: 95%;
+    }
+    iframe {
+      aspect-ratio: 16/9;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  }
+}
+
+.footer {
+  margin-top: 250px;
+  text-align: center;
+  h4 {
+    @include title;
+    margin: 50px auto;
+    position: relative;
+    &:hover {
+      transform: scale(1.05);
+      transition: 0.2s ease-in-out;
+      color: peru;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    margin-top: 50px;
+  }
+}

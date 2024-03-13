@@ -888,10 +888,10 @@ nav li:hover {
   position: relative;
 }
 .footer h4:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
   color: peru;
 }
 @media screen and (max-width: 1000px) {
@@ -1283,10 +1283,10 @@ nav li:hover {
   position: relative;
 }
 .footer h4:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
   color: peru;
 }
 @media screen and (max-width: 1000px) {
@@ -1587,4 +1587,129 @@ nav li:hover {
   left: 0px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+.tutoriel3 h2 {
+  font-family: inter-bold, sans-serif;
+  text-transform: uppercase;
+  margin: 150px 0px 100px 80px;
+  font-size: 2.9rem;
+  letter-spacing: 2.5px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+.tutoriel3 h2::before {
+  display: none;
+}
+.tutoriel3 h2::after {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .tutoriel3 h2 {
+    left: -30px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .tutoriel3 h2 {
+    -webkit-transform: translateX(-18px);
+            transform: translateX(-18px);
+  }
+}
+.tutoriel3 .tuto3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media screen and (max-width: 1000px) {
+  .tutoriel3 .tuto3 {
+    display: block;
+  }
+}
+.tutoriel3 .tuto3 ul {
+  margin: -30px 120px;
+  font-size: 1.4rem;
+  display: block;
+  font-family: inter-bold, sans-serif;
+  line-height: 60px;
+}
+@media screen and (max-width: 1628px) {
+  .tutoriel3 .tuto3 ul {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .tutoriel3 .tuto3 ul {
+    font-size: 1rem;
+    line-height: 40px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .tutoriel3 .tuto3 ul {
+    line-height: 30px;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .tutoriel3 .tuto3 ul li {
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+.tutoriel3 .ytresponsive {
+  width: 60%;
+  margin-right: 30px;
+}
+@media screen and (max-width: 1400px) {
+  .tutoriel3 .ytresponsive {
+    -webkit-transform: translateY(150px);
+            transform: translateY(150px);
+  }
+}
+@media screen and (max-width: 1300px) {
+  .tutoriel3 .ytresponsive {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+@media screen and (max-width: 1000px) {
+  .tutoriel3 .ytresponsive {
+    margin: 80px auto;
+    width: 95%;
+  }
+}
+.tutoriel3 .ytresponsive iframe {
+  aspect-ratio: 16/9;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.footer {
+  margin-top: 250px;
+  text-align: center;
+}
+.footer h4 {
+  font-family: inter-bold, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 50px auto;
+  position: relative;
+}
+.footer h4:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  color: peru;
+}
+@media screen and (max-width: 1000px) {
+  .footer {
+    margin-top: 50px;
+  }
 }/*# sourceMappingURL=index.css.map */
